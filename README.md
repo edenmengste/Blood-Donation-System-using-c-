@@ -26,26 +26,56 @@ This project implements a basic console-based Blood Donation System using C++. T
 ## Project Team & Task Division
 
 * **Team Member 1: Eden Alemayehu**
-    * **Task:** Design and implement the `blood_bank` class, including blood inventory management.
-    * **Deliverables:** Complete implementation of `blood_bank` class and its associated functions.
-
+    * Responsible for the displayBloodInventory() function. <br>
+    * Ensure proper formatting and readability of the inventory display. 
 * **Team Member 2: Edom Getahun**
-    * **Task:** Design and implement the `admin` class, including password authentication and inventory display.
-    * **Deliverables:** Complete implementation of `admin` class and its functionalities.
+   * Responsible for the donateBlood() function. <br>
+   * Handle input validation (blood group and quantity).<br>
+   * Update the blood inventory correctly upon successful donation.<br>
 
 * **Team Member 3: Enas Atham**
-    * **Task:** Design and implement the `donor` class, including data entry and display functionalities.
-    * **Deliverables:** Complete implementation of `donor` class and its member functions.
-
+    * Responsible for the requestBlood() function.
+    * Handle input validation (blood group and quantity).
+    * Determine the availability of the requested blood.
 * **Team Member 4: Ephratah Girma**
-    * **Task:** Design and implement the `patient` class, including blood request handling and compatibility checks.
-    * **Deliverables:** Complete implementation of `patient` class and its member functions.
-
+    * Responsible for the main() function.
+    * Handle user input for menu choices.
+    * Call the appropriate functions based on user selections.
+    * Implement the main program logic and user interface.
 * **Team Member 5: Eden Mengste**
-    * **Task:** Develop and maintain the main program logic, including user interaction, menu handling, and coordination between classes.
-    * **Deliverables:** Complete implementation of the `main` function and overall program flow.
+    * Oversee the overall project progress.
+    * Resolve conflicts and merge code contributions.
+    * Ensure code quality and adherence to coding standards.
+    * Assist other team members as needed.
 
-## Note:
+## Note
 
 * This is a simplified model and **does not** include all the features of a **real-world blood bank system**.
-* This project is for educational purposes and<strong> should not</strong> be used for **actual** blood donation management.
+* This project is for educational purposes and<strong> should not</strong> be used for **actual** blood donation management.  
+## Flowchart
+Here is a flowchart for our project.
+```mermaid
+graph TD
+    A[Start] --> B{Display Menu}
+    B --> C[Select Option]
+    C --> D{Option 1: Display Inventory}
+    D --> E[Display Inventory]
+    E --> B
+    C --> F{Option 2: Donate Blood}
+    F --> G[Get Blood Group & Quantity]
+    G --> H{Validate Input}
+    H --> I{Update Inventory}
+    I --> J{Display Donation Message}
+    J --> B
+    H --> K{Display Error Message}
+    K --> B
+    C --> L{Option 3: Request Blood}
+    L --> M[Get Blood Group & Quantity]
+    M --> N{Validate Input}
+    N --> O{Check Availability}
+    O --> P{Display Availability}
+    P --> B
+    O --> Q{Display Insufficient Blood}
+    Q --> B
+    C --> R{Option 4: Exit}
+    R --> S[End]
