@@ -82,6 +82,9 @@ flowchart TD
 
     P --> Q[Manage Inventory]
     P --> R[View Donors]
-    P --> S[Exit Admin]
+    P --> S[Exit Admin] --> F[End] 
 
-    F --> T[End]
+    L --> F[End] 
+    I --> F[End]
+    M --> F[End] 
+    S --> F[End]
