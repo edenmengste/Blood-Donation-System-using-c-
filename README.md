@@ -23,7 +23,7 @@ The system ensures **input validation** to guarantee accurate data entry and pro
 
 ## Task Distribution
 
-The project is divided into specific tasks for each team member:
+The project is divided into specific tasks for each team member evenly:
 
 ### 1. Eden Alemayehu - **Implement Donor Registration Logic**
    - Responsible for:
@@ -56,7 +56,8 @@ The project is divided into specific tasks for each team member:
      - Writing and running **unit tests** for all features to ensure correctness.
      - Debugging issues related to **input validation** and system behavior.
      - Testing edge cases like **full donor list** and **out-of-stock blood types**.
-## Flowchart for the system
+## Flowchart 
+This is the flowchart for the system.
 ```mermaid
 flowchart TD
     A[Start] --> B[Main Menu]
