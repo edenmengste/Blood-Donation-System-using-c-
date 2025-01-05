@@ -7,6 +7,7 @@ This is a C++ program designed to manage a **blood donation system**. It allows 
 - **Register blood donors** with their personal details.
 - **Request blood** based on their required blood type.
 - **Admin access** to manage blood inventory and view registered donors.
+**NB: Admin Password**- admin123
 
 The system ensures **input validation** to guarantee accurate data entry and proper functionality.
 
