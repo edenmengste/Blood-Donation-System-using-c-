@@ -42,7 +42,7 @@ The project is divided into specific tasks for each team member evenly:
 ### 3. Ephratah Girma - **Admin Access Implementation**
    - Responsible for:
      - Implementing the **admin menu** with options to manage the blood inventory.
-     - Writing the functionality to **add blood** to the inventory with validation for exceeding capacity.
+     - Writing the functionality to **add blood** to the inventory with validation for the exceeding capacity.
      - Providing a **view of registered donors** and the current **blood inventory**.
 
 ### 4. Enas Atham - **Main Menu and User Interface**
